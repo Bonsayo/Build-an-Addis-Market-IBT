@@ -15,7 +15,7 @@ const expensiveOrders = processedOrders.filter(o => o.total > 500);
 
 processedOrders.forEach(o => console.log(`Order ${o.id}: ${format(o.total)}`));
 
-console.log("\Orders over 500 ETB:");
+console.log("\nOrders over 500 ETB:");
 expensiveOrders.forEach(o => console.log(`Order ${o.id}: ${format(o.total)}`));
 
 const grandTotal = processedOrders.reduce((sum, o) => sum + o.total, 0);
